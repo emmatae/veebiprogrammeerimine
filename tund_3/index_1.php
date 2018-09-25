@@ -2,9 +2,13 @@
   //echo "See on minu esimene PHP!";
   $firstName = "Emma Loore";
   $lastName = "Tae";
-  $dateToday = date("d.m.Y");
+  //$dateToday = date("d.m.Y");
+  $dayNow= date("j");
+  $yearNow= date("Y");
   $weekdayNow = date("N");
+  $monthNow = date("n");
   $weekdayNamesET = ["esmaspäev", "teisipäev", "kolmapäev", "neljapäev", "reede", "laupäev", "pühapäev"];
+  $monthNamesET = ["jaanuar", "veebruar", "märts", "aprill", "mai", "juuni", "juuli", "august", "september", "oktoober", "november", "detsember"];
   //echo $weekdayNamesET;
   //var_dump($weekdayNamesET)[1];
   //echo $weekdayNow;
@@ -53,7 +57,7 @@
      <?php
         //echo "<p>Tänane kuupäev on: " . $dateToday . ". </p> \n";
 		//echo "<p>Täna on " . $weekdayNow . ", " . $dateToday . ". </p> \n";
-		echo "<p>Täna on " .$weekdayNamesET[$weekdayNow - 1] . ", " . $dateToday . ". </p> \n";
+		echo "<p>Täna on " .$weekdayNamesET[$weekdayNow - 1] . ", " . $dayNow . "." . $monthNamesET[$monthNow - 1] . " " . $yearNow. ". </p> \n";
 		echo "<p> Lehe avamise hetkel oli kell " . date("H:i:s") . ". Käes oli " . $partOfDay . ".<p/> \n";
      ?> 
    <p>Kodutöö</p>
